@@ -1,0 +1,57 @@
+{
+  "name": "grammy-tg-components",
+  "description": "Create stateful, re-usable, reactive components within Telegram using grammY",
+  "version": "0.0.1",
+  "author": "rayz1065",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "homepage": "https://github.com/rayz1065/grammy-tg-components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayz1065/grammy-tg-components.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "build": "tsc --project tsconfig.build.json",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@grammyjs/conversations": "^1.2.0",
+    "grammy": "^1.25.0",
+    "grammy-edit-or-reply": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "out/"
+  ],
+  "main": "./out/index.js",
+  "types": "./out/index.d.ts",
+  "exports": {
+    ".": "./out/index.js",
+    "./forms": "./out/forms/index.js",
+    "./components": "./out/components/index.js"
+  },
+  "keywords": [
+    "grammY",
+    "Telegram bot framework",
+    "plugin"
+  ],
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
+}
