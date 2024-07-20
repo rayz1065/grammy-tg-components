@@ -22,7 +22,7 @@
   },
   "peerDependencies": {
     "@grammyjs/conversations": "^1.2.0",
-    "grammy": "^1.25.0",
+    "grammy": "^1.27.0",
     "grammy-edit-or-reply": "^1.1.1"
   },
   "devDependencies": {
