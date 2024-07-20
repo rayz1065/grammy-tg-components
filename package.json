@@ -1,7 +1,7 @@
 {
   "name": "grammy-tg-components",
   "description": "Create stateful, re-usable, reactive components within Telegram using grammY",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "rayz1065",
   "license": "MIT",
   "engines": {
